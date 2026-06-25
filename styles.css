@@ -1,0 +1,62 @@
+h1 {
+  font-size: 2.44rem;
+}
+h2 {
+  font-size: 1.71rem;
+}
+h3 {
+  font-size: 1.22rem;
+}
+h4 {
+  font-size: 0.98rem;
+}
+p {
+  line-height: 1.5;
+}
+
+div > ul {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding-left: 3ch;
+}
+
+div > ol {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding-left: 3ch;
+}
+ul li {
+  margin-bottom: .25em;
+  max-width: 64ex;
+}
+
+ol li {
+  margin-bottom: .25em;
+  max-width: 64ex;
+}
+
+ul ul {
+    margin-top: 0.25em;
+}
+
+ol ul {
+    margin-top: 0.25em;
+}
+
+ul ol {
+    margin-top: 0.25em;
+}
+
+ol ol {
+    margin-top: 0.25em;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
