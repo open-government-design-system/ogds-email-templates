@@ -81,6 +81,7 @@ I've also taken some inspiration from:
 
 - https://caniemail.com
 - https://www.goodemailcode.com/
+- https://reallygoodemails.com/
 - New Jersey Unemployment Insurance email templates: https://www.figma.com/community/file/1242850667740493704
 
 ## Ideas for Improvement
