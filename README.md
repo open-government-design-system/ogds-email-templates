@@ -33,9 +33,17 @@ There are two layers:
 
 Most of the CSS for USWDS-styled emails can be achieved by including some CSS. This "base CSS" is the foundation of the OGDS Email Templates.
 
-You can find this in the `styles.css` file. (note: this is not tested yet, that is a work-in-progress)
+Features:
 
-(TODO: We should include an example of the base css being used in an email template that does NOT rely on MJML)
+- The base CSS includes typography defaults for text, headings, and lists, that match the [USWDS Prose element](https://designsystem.digital.gov/components/prose/).
+- We recommend leaving the font family as the default one for the email client (do not override this), for two reasons:
+  - The default font respects font sizing settings on iOS; custom fonts do not
+  - Plain text emails generally perform better than overly-styled emails
+
+Two reference files:
+
+1. The styles are in the `styles.css` file.
+2. An example email is in the `template.html` file.
 
 ### MJML (etc)
 
