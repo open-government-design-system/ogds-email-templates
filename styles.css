@@ -2,33 +2,12 @@
 /* but the headings are each one level lower */
 
 body {
-  color: #1b1b1b;
-}
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-body {
   color: #171717;
   background-color: #f0f0f0;
+  line-height: 1.5;
+  font-size:medium;
+  font-size:max(16px, 1rem);
   margin: 0;
-}
-
-.section {
-  max-width: 600px;
-  margin: auto;
-  padding: 16px;
-}
-
-.main {
-  background-color: #ffffff;
-}
-
-.header {
-  font-size: 1.71em;
-  margin-bottom: 16px;
 }
 
 h1, h2, h3 {
@@ -44,21 +23,21 @@ h2 {
 h3 {
   font-size: 0.98em;
 }
+
 p {
-  line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 div > ul {
   margin-bottom: 1em;
   margin-top: 1em;
-  line-height: 1.5;
   padding-left: 3ch;
 }
 
 div > ol {
   margin-bottom: 1em;
   margin-top: 1em;
-  line-height: 1.5;
   padding-left: 3ch;
 }
 ul li {
@@ -98,4 +77,21 @@ ol li:last-child {
 table {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+
+/* Layout classes */
+
+.section {
+  max-width: 568px;
+  margin: auto;
+  padding: 16px;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.header {
+  font-size: 1.71em;
 }
