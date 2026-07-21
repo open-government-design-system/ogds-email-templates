@@ -29,7 +29,7 @@ There are two layers:
 1. Basic css that works across email clients (we use this approach as much as possible)
 2. For some elements, like buttons, it is difficult to get those to work without additional support. There are tools for this such as [MJML](https://mjml.io/).
 
-### Base CSS
+### Vanilla HTML & CSS
 
 Most of the CSS for USWDS-styled emails can be achieved by including some CSS. This "base CSS" is the foundation of the OGDS Email Templates.
 
@@ -43,7 +43,7 @@ Features:
 Two reference files:
 
 1. The styles are in the `styles.css` file.
-2. An example email is in the `template.html` file.
+2. An example email is in the `template_vanilla_html.html` file.
 
 ### MJML (etc)
 
@@ -51,9 +51,12 @@ Some "advanced" items, such as buttons, cannot be styled with CSS alone. These d
 
 If you need these advanced fetures, MJML is one library that you might use to keep that complexity out of your email templates. Tools like MJML provide an abstraction layer over the complex markup we need to ensure cross-email-client compatibility.
 
-You can find this in the `template.mjml` file.
+You can find this in the `template_mjml.mjml` file.
+There is also a compiled version you can, named `template_mjml_compiled.mjml`
 
-MJML enables a few specific things that aren't possible with vanilla CSS alone:
+The MJML approach depends on the `styles.css` file as well.
+
+Beyond that, MJML adds additional features that aren't possible with vanilla CSS alone:
 
 - Styling buttons that work across email clients
 - Creating something that behaves as an `<hr>` element that works across email clients
@@ -64,14 +67,14 @@ MJML enables a few specific things that aren't possible with vanilla CSS alone:
 To get this running locally, so you can test it:
 
 1. Install [the MJML App](https://mjmlio.github.io/mjml-app/)
-2. Download this Gist
-3. Open the folder for this Gist in the MJML App
+2. Download the code from this repo
+3. Open the folder for this project in the MJML App
 
 #### Running MJML Online
 
 1. Open [the MJML online editor](https://mjml.io/try-it-live)
-2. Copy-paste in the `.mjml` file below into the web editor.
-3. Copy-paste the `.css` contents below into the same file, in the `mj-head`. Like this:
+2. Copy-paste in the `template_mjml.mjml` file into the web editor.
+3. Copy-paste the `.css` contents from `styles.css` into the same file, in the `mj-head`. Like this:
 
 ```
 <mjml>
@@ -85,7 +88,7 @@ To get this running locally, so you can test it:
 
 ## Other Inspiration
 
-I've also taken some inspiration from:
+This project has taken some inspiration from:
 
 - https://caniemail.com
 - https://www.goodemailcode.com/
@@ -95,6 +98,5 @@ I've also taken some inspiration from:
 
 ## Ideas for Improvement
 
-- I think there are better ways we could pull out the typography CSS - I just grabbed the ones I thought were most important, manually.
-- We could potentially use more components, like `alert` and others. [New Jersey Unemployment Insurance has some great examples](https://www.figma.com/community/file/1242850667740493704).
-- We could make [MJML components](https://documentation.mjml.io/#community-components) for some of these. I'm not sure we need to - the css/`mj-class` approach is pretty good already! I think custom components are more important if there is DOM re-writing (like buttons -> tables).
+- We could potentially add additional components, like `alert` and others. [New Jersey Unemployment Insurance has some great examples](https://www.figma.com/community/file/1242850667740493704).
+- We could share details for how to integrate this code into other platforms, such as GovDelivery and Salesforce (etc).
