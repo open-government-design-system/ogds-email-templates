@@ -1,14 +1,37 @@
+/* Styles from the USWDS Prose element */
+/* but the headings are each one level lower */
+
+body {
+  color: #1b1b1b;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+body,
+p,
+ul,
+ol,
+li {
+  font-size: 1.06em;
+}
+
 h1 {
-  font-size: 2.44rem;
+  font-size: 1.71em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }
 h2 {
-  font-size: 1.71rem;
+  font-size: 1.22em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
 }
 h3 {
-  font-size: 1.22rem;
-}
-h4 {
-  font-size: 0.98rem;
+  font-size: 0.98em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
 }
 p {
   line-height: 1.5;
@@ -28,29 +51,29 @@ div > ol {
   padding-left: 3ch;
 }
 ul li {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   max-width: 64ex;
 }
 
 ol li {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   max-width: 64ex;
 }
 
 ul ul {
-    margin-top: 0.25em;
+  margin-top: 0.25em;
 }
 
 ol ul {
-    margin-top: 0.25em;
+  margin-top: 0.25em;
 }
 
 ul ol {
-    margin-top: 0.25em;
+  margin-top: 0.25em;
 }
 
 ol ol {
-    margin-top: 0.25em;
+  margin-top: 0.25em;
 }
 
 ul li:last-child {
@@ -59,4 +82,9 @@ ul li:last-child {
 
 ol li:last-child {
   margin-bottom: 0;
+}
+
+table {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
