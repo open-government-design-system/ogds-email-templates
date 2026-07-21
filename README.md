@@ -14,14 +14,18 @@ When developing code to use in email templates, you should make sure it works ac
 <summary>
 Vanilla HTML email on desktop
 </summary>
+
 ![Vanilla HTML email on desktop](./screenshots/Vanilla%20HTML%20-%20Desktop.png)
+
 </details>
 
 <details>
 <summary>
 Vanilla HTML email on mobile
 </summary>
+
 ![Vanilla HTML email on mobile](./screenshots/Vanilla%20HTML%20-%20Mobile.png)
+
 </details>
 
 ### MJML
@@ -30,14 +34,18 @@ Vanilla HTML email on mobile
 <summary>
 MJML email on desktop
 </summary>
+
 ![MJML email on desktop](./screenshots/MJML%20-%20Desktop.png)
+
 </details>
 
 <details>
 <summary>
 MJML email on mobile
 </summary>
+
 ![MJML email on mobile](./screenshots/MJML%20-%20Mobile.png)
+
 </details>
 
 ## How to author effective email templates
