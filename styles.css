@@ -40,35 +40,15 @@ div > ol {
   margin-top: 1em;
   padding-left: 3ch;
 }
-ul li {
+ul li, ol li {
   margin-bottom: 0.25em;
 }
 
-ol li {
-  margin-bottom: 0.25em;
-}
-
-ul ul {
+ul ul, ol ul, ul ol, ol ol {
   margin-top: 0.25em;
 }
 
-ol ul {
-  margin-top: 0.25em;
-}
-
-ul ol {
-  margin-top: 0.25em;
-}
-
-ol ol {
-  margin-top: 0.25em;
-}
-
-ul li:last-child {
-  margin-bottom: 0;
-}
-
-ol li:last-child {
+ul li:last-child, ol li:last-child {
   margin-bottom: 0;
 }
 
