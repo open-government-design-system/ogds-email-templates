@@ -42,12 +42,10 @@ div > ol {
 }
 ul li {
   margin-bottom: 0.25em;
-  max-width: 64ex;
 }
 
 ol li {
   margin-bottom: 0.25em;
-  max-width: 64ex;
 }
 
 ul ul {
@@ -83,7 +81,7 @@ table {
 /* Layout classes */
 
 .section {
-  max-width: 568px;
+  max-width: 68ex;
   margin: auto;
   padding: 16px;
 }
