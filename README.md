@@ -89,6 +89,7 @@ I've also taken some inspiration from:
 
 - https://caniemail.com
 - https://www.goodemailcode.com/
+  - In particular, the base vanilla HTML template is largely from this source.
 - https://reallygoodemails.com/
 - New Jersey Unemployment Insurance email templates: https://www.figma.com/community/file/1242850667740493704
 
