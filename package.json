@@ -1,0 +1,23 @@
+{
+  "name": "ogds-email-templates",
+  "version": "1.0.0",
+  "description": "This repo re-creates the [USWDS styles](https://designsystem.digital.gov/) in a way that works with emails.",
+  "homepage": "https://github.com/open-government-design-system/ogds-email-templates#readme",
+  "bugs": {
+    "url": "https://github.com/open-government-design-system/ogds-email-templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-government-design-system/ogds-email-templates.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mjml": "^5.4.0"
+  }
+}
