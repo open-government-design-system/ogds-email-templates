@@ -51,11 +51,11 @@
   </mj-head>
   <mj-body>
     <mj-wrapper padding="16px" background-color="#ffffff">
-      <mj-section padding-bottom="12px">
-        <mj-column vertical-align="middle">
+      <mj-section padding-bottom="12px" gutter="12px">
+        <mj-column vertical-align="middle" width="70%">
           <mj-text font-size="24px"> Program Name or Logo </mj-text>
         </mj-column>
-        <mj-column vertical-align="middle">
+        <mj-column vertical-align="middle" width="30%">
           <mj-button
             mj-class="usa-button usa-button--outline"
             href="https://example.com"
