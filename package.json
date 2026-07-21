@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/open-government-design-system/ogds-email-templates.git"
   },
-  "license": "ISC",
+  "license": "CC0",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
