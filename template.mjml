@@ -1,99 +1,227 @@
-	<mjml>
-	  <mj-head>
-	    <mj-title>Title that shows up in the browser tab. Maybe it should default to the subject of the email.</mj-title>
-	    <mj-preview>Email preview text goes here. Maybe it should default to the first line of the body text, after the header.</mj-preview>
-	    <mj-include path="./styles.css" type="css" css-inline="inline" />
-	    <mj-attributes>
-	      <mj-class name="usa-button" align="left" background-color="#005ea2" line-height="0.9" font-size="1.06rem" border-radius="0.25rem" display="inline" inner-padding="0.75rem 1.25rem" font-size="1.06rem" line-height="0.9" font-weight="500" />
-	      <mj-class name="usa-button--outline" background-color="none" color="#005ea2" border="1px solid #005ea2" />
-	      <mj-class name="usa-button--secondary" background-color="#d83933" />
-	      <mj-class name="usa-button--accent-cool" background-color="#00bde3" color="#1b1b1b" />
-	      <mj-class name="usa-button--accent-warm" background-color="#fa9441" color="#1b1b1b" />
-	      <mj-class name="usa-button--base" background-color="#757575" />
-	      <mj-body background-color="#e6e6e6" />
-	      <mj-section background-color="#ffffff" />
-	      <mj-divider border-color="#252f3e" />
-	    </mj-attributes>
-	  </mj-head>
-	  <mj-body>
-	    <mj-section padding="0">
-	      <mj-column vertical-align="middle">
-	        <mj-button mj-class="usa-button usa-button--outline" href="https://example.com">The Program Name</mj-button>
-	      </mj-column>
-	    </mj-section>
-	    <mj-section>
-	      <mj-column>
-	        <mj-text>
-	          <h2>Section heading</h2>
-	          <h3>Section of the page</h3>
-	          <p> The sprawling landscape encompasses lush forests and an abundance of wildflowers that bloom year-round. Streams, rivers and waterfalls appear along hiking routes that include a segment of the Appalachian Trail. </p>
-	          <h4>Subsection of the page</h4>
-	          <p> World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park. </p>
-	          <p> Entrance to Great Smoky Mountains National Park is free. The park is one of the few national parks where no entrance fees are charged. </p>
-	          <ul>
-	            <li>Unordered list item</li>
-	            <li>Unordered list item</li>
-	            <li> Unordered list item <ul>
-	                <li>Nested unordered list item</li>
-	                <li> Nested unordered list item <ul>
-	                    <li>3rd level nesting</li>
-	                    <li>3rd level nesting</li>
-	                    <li>3rd level nesting</li>
-	                  </ul>
-	                </li>
-	                <li>Nested unordered list item</li>
-	                <li>Nested unordered list item</li>
-	              </ul>
-	            </li>
-	          </ul>
-	          <p> Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms. </p>
-	          <ol>
-	            <li>Ordered list item</li>
-	            <li> Ordered list item <ol>
-	                <li>Nested ordered list item</li>
-	                <li>Nested ordered list item</li>
-	                <li>Nested ordered list item</li>
-	                <li>Nested ordered list item</li>
-	              </ol>
-	            </li>
-	            <li>Ordered list item</li>
-	          </ol>
-	          <h2>Button Examples</h2>
-	          <p>Email clients do not support true button elements. MJML works around this by using tables to emulate buttons, since tables are well-supported across browsers.</p>
-	          <p>Table-based buttons work pretty well across email clients, but they do have some limitations:</p>
-	          <ul>
-	            <li>In some email clients, only the text is clickable (not the whole button).</li>
-	            <li>In some email clients, rounded borders don't work.</li>
-	            <li>Buttons may make emails more likely to be flagged as spam by automated spam filters.</li>
-	          </ul>
-	          <p>There are several other approaches, but they each have some pretty significant drawbacks as well. Table-based buttons are the most popular approach.</p>
-	        </mj-text>
-	        <mj-button href="#" mj-class="usa-button">Default</mj-button>
-	        <mj-button href="#" mj-class="usa-button usa-button--outline">Outline</mj-button>
-	        <mj-button href="#" mj-class="usa-button usa-button--secondary">Secondary</mj-button>
-	        <mj-button href="#" mj-class="usa-button usa-button--accent-cool">Accent Cool</mj-button>
-	        <mj-button href="#" mj-class="usa-button usa-button--accent-warm">Accent Warm</mj-button>
-	        <mj-button href="#" mj-class="usa-button usa-button--base">Base</mj-button>
-	      </mj-column>
-	    </mj-section>
-	    <mj-section>
-	      <mj-column>
-	        <mj-divider></mj-divider>
-	        <mj-text>
-	          <h3>Need additional help?</h3>
-	          <p>Learn more about our program on <a href="#">Our Program Website</a>.
-	          <p>For general questions, please contact us at <a href="mailto:email@example.com">email@example.com</a> or call <a href="tel:123-456-7890">123-456-7890</a>.</p>
-	          <p>[Department Name]</p>
-	        </mj-text>
-	      </mj-column>
-	    </mj-section>
-	    <mj-section background-color="inherit">
-	      <mj-column>
-	        <mj-text>
-	          <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="#">email@example.com</a></p>
-	        </mj-text>
-	        </div>
-	      </mj-column>
-	    </mj-section>
-	  </mj-body>
-	</mjml>	
+<mjml>
+  <mj-head>
+    <mj-title
+      >Title that shows up in the browser tab. Maybe it should default to the
+      subject of the email.</mj-title
+    >
+    <mj-preview
+      >Email preview text goes here. Maybe it should default to the first line
+      of the body text, after the header.</mj-preview
+    >
+    <mj-include path="./styles.css" type="css" css-inline="inline" />
+    <mj-attributes>
+      <mj-class
+        name="usa-button"
+        align="left"
+        background-color="#005ea2"
+        line-height="0.9"
+        font-size="16px"
+        border-radius="4px"
+        display="inline"
+        inner-padding="0.75em 1.25em"
+        font-weight="700"
+      />
+      <mj-class
+        name="usa-button--outline"
+        background-color="none"
+        color="#005ea2"
+        border="1px solid #005ea2"
+      />
+      <mj-class name="usa-button--secondary" background-color="#d83933" />
+      <mj-class
+        name="usa-button--accent-cool"
+        background-color="#00bde3"
+        color="#1b1b1b"
+      />
+      <mj-class
+        name="usa-button--accent-warm"
+        background-color="#fa9441"
+        color="#1b1b1b"
+      />
+      <mj-class name="usa-button--base" background-color="#757575" />
+      <mj-body background-color="#f0f0f0" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-text padding="0" />
+      <mj-divider padding="12px 0" border-width="2px" />
+      <mj-image padding="0" />
+      <mj-button padding="0" />
+    </mj-attributes>
+    <mj-include path="./styles.css" type="css" />
+  </mj-head>
+  <mj-body>
+    <mj-wrapper padding="16px" background-color="#ffffff">
+      <mj-section padding-bottom="12px">
+        <mj-column vertical-align="middle">
+          <mj-text font-size="24px"> Program Name or Logo </mj-text>
+        </mj-column>
+        <mj-column vertical-align="middle">
+          <mj-button
+            mj-class="usa-button usa-button--outline"
+            href="https://example.com"
+            align="right"
+          >
+            Sign in
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-text>
+            <h1>Content similar to email subject [H1]</h1>
+            <h2>Section heading [H2]</h2>
+            <h3>Subsection heading [H3]</h3>
+            <p>
+              The sprawling landscape encompasses lush forests and an abundance
+              of wildflowers that bloom year-round. Streams, rivers and
+              waterfalls appear along hiking routes that include a segment of
+              the Appalachian Trail.
+            </p>
+            <ul>
+              <li>Unordered list item</li>
+              <li>Unordered list item</li>
+              <li>
+                Unordered list item
+                <ul>
+                  <li>Nested unordered list item</li>
+                  <li>
+                    Nested unordered list item
+                    <ul>
+                      <li>3rd level nesting</li>
+                      <li>3rd level nesting</li>
+                      <li>3rd level nesting</li>
+                    </ul>
+                  </li>
+                  <li>Nested unordered list item</li>
+                  <li>Nested unordered list item</li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              Right now scientists think that we only know about 17 percent of
+              the plants and animals that live in the park, or about 17,000
+              species of a probable 100,000 different organisms.
+            </p>
+            <ol>
+              <li>Ordered list item</li>
+              <li>
+                Ordered list item
+                <ol>
+                  <li>Nested ordered list item</li>
+                  <li>Nested ordered list item</li>
+                  <li>Nested ordered list item</li>
+                  <li>Nested ordered list item</li>
+                </ol>
+              </li>
+              <li>Ordered list item</li>
+            </ol>
+            <h2>Button Examples</h2>
+            <p>
+              Email clients do not support true button elements. MJML works
+              around this by using tables to emulate buttons, since tables are
+              well-supported across browsers.
+            </p>
+            <p>
+              Table-based buttons work pretty well across email clients, but
+              they do have some limitations:
+            </p>
+            <ul>
+              <li>
+                In some email clients, only the text is clickable (not the whole
+                button).
+              </li>
+              <li>In some email clients, rounded borders don't work.</li>
+              <li>
+                Buttons may make emails more likely to be flagged as spam by
+                automated spam filters.
+              </li>
+            </ul>
+            <p>
+              There are several other approaches, but they each have some pretty
+              significant drawbacks as well. Table-based buttons are the most
+              popular approach.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-wrapper gap="8px">
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button">Default</mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button usa-button--outline">
+              Outline
+            </mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button usa-button--secondary">
+              Secondary
+            </mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button usa-button--accent-cool">
+              Accent Cool
+            </mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button usa-button--accent-warm">
+              Accent Warm
+            </mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-button href="#" mj-class="usa-button usa-button--base">
+              Base
+            </mj-button>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
+      <mj-section>
+        <mj-column>
+          <mj-divider></mj-divider>
+          <mj-text>
+            <h2>Need additional help?</h2>
+            <p>
+              Learn more about our program on
+              <a href="#">Our Program Website</a>.
+            </p>
+            <p>
+              For general questions, please contact us at
+              <a href="mailto:email@example.com">email@example.com</a> or call
+              <a href="tel:123-456-7890">123-456-7890</a>.
+            </p>
+            <p>[Department Name]</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-section padding="16px;">
+      <mj-column>
+        <mj-text>
+          <h2>Confidentiality Notice</h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <strong>consectetur adipiscing</strong> elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+            <a href="#">email@example.com</a>
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
