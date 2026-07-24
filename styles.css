@@ -1,6 +1,11 @@
 /* These styles are based on the USWDS Prose element */
 /* but the headings are each one level lower */
 
+/* In emails, CSS is generally safe to use for typography */
+/* but CSS alone will not work with layout (sections with padding, etc) */
+/* and CSS alone will not work for link-buttons */
+/* for layout and buttons, you will need a tool that creates those from table elements */
+
 body {
   color: #171717;
   background-color: #f0f0f0;
