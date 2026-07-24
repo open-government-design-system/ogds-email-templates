@@ -68,7 +68,8 @@ ol li:last-child {
 .section {
   max-width: 68ex;
   margin: auto;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .main {
