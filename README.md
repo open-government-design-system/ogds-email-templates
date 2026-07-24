@@ -63,14 +63,14 @@ There are two layers:
 1. Basic css that works across email clients (we use this approach as much as possible)
 2. For some elements, like buttons, it is difficult to get those to work without additional support. There are tools for this such as [MJML](https://mjml.io/).
 
-### Vanilla HTML & CSS
+### Typography can works with CSS alone
 
 Most of the CSS for USWDS-styled emails can be achieved by including some CSS. This "base CSS" is the foundation of the OGDS Email Templates.
 
 Features:
 
 - The base CSS includes typography defaults for text, headings, and lists, that match the [USWDS Prose element](https://designsystem.digital.gov/components/prose/).
-- We recommend leaving the font family as the default one for the email client (do not override this), for two reasons:
+- We recommend leaving the font family as the default one for the email client (`initial`). Two reasons:
   - The default font respects font sizing settings on iOS; custom fonts do not
   - Plain text emails generally perform better than overly-styled emails
 
@@ -79,11 +79,36 @@ Two reference files:
 1. The styles are in the `styles.css` file.
 2. An example email is in the `template_vanilla_html.html` file.
 
-### MJML (etc)
+Note: this vanilla html example does not have a reliable layout, or buttons.
 
-Some "advanced" items, such as buttons, cannot be styled with CSS alone. These depend on the HTML nodes being structured in a certain way. For example, the `<button>` element is widely unsupported in email clients. There are several workarounds to get buttons to work, such as "tables in tables" approach, and the "not-exactly-SVG" approach.
+### Layout and Buttons require additional tooling (MJML, etc)
 
-If you need these advanced fetures, MJML is one library that you might use to keep that complexity out of your email templates. Tools like MJML provide an abstraction layer over the complex markup we need to ensure cross-email-client compatibility.
+Some things can NOT be done with CSS alone in emails. The biggest two are **layout** and **buttons**. These depend on the HTML nodes being structured in a certain way. For example, the `<button>` element is widely unsupported in email clients. There are several workarounds to get buttons to work, such as "tables in tables" approach, and the "not-exactly-SVG" approach.
+
+If you need these fetures, you will need some email tooling. Many platforms come with their own email tooling (Mailchimp, GovDelivery, Salesforce). These platforms usually do provide layout and button support.
+
+These are the changes you'll need to do in that tool to match the example templaet in this repo:
+
+- Default text styling
+  - Only if needed (many tools specify this, and it would override the css if they do – but we can put them “back” to this configuration)
+  - color="#171717"
+  - line-height="1.5"
+  - font-size="16px" (leave blank if possible to leave it to CSS, or put this in if you must override your tool's setting)
+- Email body element (parent div of everything)
+  - background-color="#f0f0f0"
+  - width="560px" this is close to the width of USWDS Prose, an approximation
+- Each sub-section
+  - padding-left="16px" padding-right="16px"
+  - padding-top="0px" padding-bottom="0px" (only if needed, e.g. if the tool comes with default padding, you can remove it)
+  - background-color="#ffffff"
+- Footer section (“Disclaimer”)
+  - class="footer" (to apply typography)
+  - background-color="#f0f0f0" (to match body background)
+  - padding-top="16px" padding-bottom="16px" (if needed?)
+
+#### MJML (e.g. in Ruby on Rails)
+
+If you are doing a custom software application (such as in Ruby on Rails), then MJML is one library that you might use to keep that complexity out of your email templates. Tools like MJML provide an abstraction layer over the complex markup we need to ensure cross-email-client compatibility.
 
 You can find this in the `template_mjml.mjml` file.
 There is also a compiled version you can, named `template_mjml_compiled.mjml`
@@ -96,7 +121,7 @@ Beyond that, MJML adds additional features that aren't possible with vanilla CSS
 - Creating something that behaves as an `<hr>` element that works across email clients
 - Support for a multi-column layout (not shown)
 
-#### Running MJML Locally
+##### Running MJML Locally
 
 To get this running locally, so you can test it:
 
@@ -104,7 +129,7 @@ To get this running locally, so you can test it:
 2. Download the code from this repo
 3. Open the folder for this project in the MJML App
 
-#### Running MJML Online
+##### Running MJML Online
 
 1. Open [the MJML online editor](https://mjml.io/try-it-live)
 2. Copy-paste in the `template_mjml.mjml` file into the web editor.
