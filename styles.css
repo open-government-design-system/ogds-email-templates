@@ -68,26 +68,8 @@ ol li:last-child {
   margin-bottom: 0;
 }
 
-/* Layout classes */
-
-.section {
-  max-width: 68ex;
-  margin: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.main {
-  background-color: #ffffff;
-}
-
-.header {
-  font-size: 1.71em;
-}
-
-.footer {
+.footer h2,
+.footer p {
+  font-size: 1em;
   color: #71767a;
-  background-color: #f0f0f0;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
