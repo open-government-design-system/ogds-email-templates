@@ -16,7 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-mjml": "mjml template_mjml.mjml -o template_mjml_compiled.html --config.allowIncludes true"
+    "mjml:compile": "mjml template_mjml.mjml -o template_mjml_compiled.html --config.allowIncludes true",
+    "mjml:watch": "mjml -w template_mjml.mjml -o template_mjml_compiled.html --config.allowIncludes true"
   },
   "dependencies": {
     "mjml": "^5.4.0"
