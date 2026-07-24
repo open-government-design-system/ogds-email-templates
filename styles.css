@@ -79,3 +79,10 @@ ol li:last-child {
 .header {
   font-size: 1.71em;
 }
+
+.footer {
+  color: #71767a;
+  background-color: #f0f0f0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
