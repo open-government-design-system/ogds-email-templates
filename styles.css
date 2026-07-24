@@ -1,62 +1,69 @@
+/* Styles from the USWDS Prose element */
+/* but the headings are each one level lower */
+
+body {
+  color: #171717;
+  background-color: #f0f0f0;
+  line-height: 1.5;
+  font-size: medium;
+  font-size: max(16px, 1rem);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
 h1 {
-  font-size: 2.44rem;
+  font-size: 1.71em;
 }
 h2 {
-  font-size: 1.71rem;
+  font-size: 1.22em;
 }
 h3 {
-  font-size: 1.22rem;
+  font-size: 0.98em;
 }
-h4 {
-  font-size: 0.98rem;
-}
+
 p {
-  line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 div > ul {
   margin-bottom: 1em;
   margin-top: 1em;
-  line-height: 1.5;
   padding-left: 3ch;
 }
 
 div > ol {
   margin-bottom: 1em;
   margin-top: 1em;
-  line-height: 1.5;
   padding-left: 3ch;
 }
-ul li {
-  margin-bottom: .25em;
-  max-width: 64ex;
+ul li, ol li {
+  margin-bottom: 0.25em;
 }
 
-ol li {
-  margin-bottom: .25em;
-  max-width: 64ex;
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0.25em;
 }
 
-ul ul {
-    margin-top: 0.25em;
-}
-
-ol ul {
-    margin-top: 0.25em;
-}
-
-ul ol {
-    margin-top: 0.25em;
-}
-
-ol ol {
-    margin-top: 0.25em;
-}
-
-ul li:last-child {
+ul li:last-child, ol li:last-child {
   margin-bottom: 0;
 }
 
-ol li:last-child {
-  margin-bottom: 0;
+/* Layout classes */
+
+.section {
+  max-width: 68ex;
+  margin: auto;
+  padding: 16px;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.header {
+  font-size: 1.71em;
 }
