@@ -10,16 +10,21 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 1.5em;
   margin-bottom: 0;
 }
+
 h1 {
   font-size: 1.71em;
 }
+
 h2 {
   font-size: 1.22em;
 }
+
 h3 {
   font-size: 0.98em;
 }
@@ -40,15 +45,21 @@ div > ol {
   margin-top: 1em;
   padding-left: 3ch;
 }
-ul li, ol li {
+
+ul li,
+ol li {
   margin-bottom: 0.25em;
 }
 
-ul ul, ol ul, ul ol, ol ol {
+ul ul,
+ol ul,
+ul ol,
+ol ol {
   margin-top: 0.25em;
 }
 
-ul li:last-child, ol li:last-child {
+ul li:last-child,
+ol li:last-child {
   margin-bottom: 0;
 }
 
