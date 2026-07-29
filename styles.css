@@ -1,5 +1,10 @@
-/* Styles from the USWDS Prose element */
+/* These styles are based on the USWDS Prose element */
 /* but the headings are each one level lower */
+
+/* In emails, CSS is generally safe to use for typography */
+/* but CSS alone will not work with layout (sections with padding, etc) */
+/* and CSS alone will not work for link-buttons */
+/* for layout and buttons, you will need a tool that creates those from table elements */
 
 body {
   color: #171717;
@@ -10,16 +15,21 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 1.5em;
   margin-bottom: 0;
 }
+
 h1 {
   font-size: 1.71em;
 }
+
 h2 {
   font-size: 1.22em;
 }
+
 h3 {
   font-size: 0.98em;
 }
@@ -40,30 +50,26 @@ div > ol {
   margin-top: 1em;
   padding-left: 3ch;
 }
-ul li, ol li {
+
+ul li,
+ol li {
   margin-bottom: 0.25em;
 }
 
-ul ul, ol ul, ul ol, ol ol {
+ul ul,
+ol ul,
+ul ol,
+ol ol {
   margin-top: 0.25em;
 }
 
-ul li:last-child, ol li:last-child {
+ul li:last-child,
+ol li:last-child {
   margin-bottom: 0;
 }
 
-/* Layout classes */
-
-.section {
-  max-width: 68ex;
-  margin: auto;
-  padding: 16px;
-}
-
-.main {
-  background-color: #ffffff;
-}
-
-.header {
-  font-size: 1.71em;
+.footer h2,
+.footer p {
+  font-size: 1em;
+  color: #71767a;
 }
