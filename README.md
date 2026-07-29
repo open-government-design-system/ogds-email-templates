@@ -63,7 +63,7 @@ There are two layers:
 1. Basic css that works across email clients (we use this approach as much as possible)
 2. For some elements, like buttons, it is difficult to get those to work without additional support. There are tools for this such as [MJML](https://mjml.io/).
 
-### Typography can works with CSS alone
+### Typography can work with CSS alone
 
 Most of the CSS for USWDS-styled emails can be achieved by including some CSS. This "base CSS" is the foundation of the OGDS Email Templates.
 
