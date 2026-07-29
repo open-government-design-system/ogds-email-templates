@@ -87,7 +87,7 @@ Some things can NOT be done with CSS alone in emails. The biggest two are **layo
 
 If you need these fetures, you will need some email tooling. Many platforms come with their own email tooling (Mailchimp, GovDelivery, Salesforce). These platforms usually do provide layout and button support.
 
-These are the changes you'll need to do in that tool to match the example templaet in this repo:
+These are the changes you'll need to do in that tool to match the example template in this repo:
 
 - Default text styling
   - Only if needed (many tools specify this, and it would override the css if they do – but we can put them “back” to this configuration)
