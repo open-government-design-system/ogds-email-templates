@@ -85,7 +85,7 @@ Note: this vanilla html example does not have a reliable layout, or buttons.
 
 Some things can NOT be done with CSS alone in emails. The biggest two are **layout** and **buttons**. These depend on the HTML nodes being structured in a certain way. For example, the `<button>` element is widely unsupported in email clients. There are several workarounds to get buttons to work, such as "tables in tables" approach, and the "not-exactly-SVG" approach.
 
-If you need these fetures, you will need some email tooling. Many platforms come with their own email tooling (Mailchimp, GovDelivery, Salesforce). These platforms usually do provide layout and button support.
+If you need these features, you will need some email tooling. Many platforms come with their own email tooling (Mailchimp, GovDelivery, Salesforce). These platforms usually do provide layout and button support.
 
 These are the changes you'll need to do in that tool to match the example template in this repo:
 
